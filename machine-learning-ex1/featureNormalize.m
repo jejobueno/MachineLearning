@@ -27,8 +27,10 @@ sigma = zeros(1, size(X, 2));
 %       
 
 
+mu = mean(X, 1);
+sigma = std(X, 1);
 
-
+X_norm = (X-repmat(mu, length(X), 1)).*repmat(1./sigma, length(X), 1);
 
 
 
