@@ -1,0 +1,4 @@
+*token.mat*
+*.DS_Store*
+./lib*
+!.*.gitignore
