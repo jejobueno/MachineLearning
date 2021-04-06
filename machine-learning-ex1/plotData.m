@@ -17,6 +17,12 @@ figure; % open a new figure window
 %       markers larger by using plot(..., 'rx', 'MarkerSize', 10);
 
 
+%plot the figure
+plot(x, y, 'rx');
+
+%Set up the axes
+xlabel('Population size in 10,000s')
+ylabel('Profuit in 10,000s')
 
 
 
