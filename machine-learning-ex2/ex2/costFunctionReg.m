@@ -22,6 +22,10 @@ h_theta = sigmoid(X*theta);
 
 J = -(y'*log(h_theta)+(1-y)'*log(1-h_theta))/m + (theta(2:length(theta))'*theta(2:length(theta)))*(lambda/(2*m));
 
+theta(1) = 0;
+
+grad = ((1/m)*(h_theta-y)'*X + lambda/m*theta');
+
 % =============================================================
 
 end
